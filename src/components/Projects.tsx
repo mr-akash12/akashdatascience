@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
+import { ExternalLink, ChevronDown, ChevronUp, Globe } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -11,6 +11,7 @@ const projects = [
     description: 'A full-stack data science project that uncovers key drivers of employee turnover and predicts attrition risk using Python, Power BI, and Streamlit—empowering HR teams with actionable insights for better retention strategies.',
     image: 'https://interimexecs.com/wp-content/uploads/2022/09/CEO_Turnover_social.png',
     link: 'https://github.com/mr-akash12/Employee-Attrition-Prediction-App.git',
+    website: 'https://quantum-flight-path.lovable.app/',
     category: 'Python',
     tags: ['Pandas', 'Scikit-learn', 'Matplotlib / Seaborn / Power BI', 'Streamlit'],
     color: 'border-primary'
@@ -120,15 +121,28 @@ export default function Projects() {
                         </Badge>
                       ))}
                     </div>
-                    <Button
-                      asChild
-                      variant="outline"
-                      className="w-full border-primary hover:bg-primary/10 group-hover:border-accent"
-                    >
-                      <a href={project.link} target="_blank" rel="noopener noreferrer">
-                        View Project <ExternalLink className="ml-2 h-4 w-4" />
-                      </a>
-                    </Button>
+                    <div className={`flex gap-2 ${project.website ? '' : ''}`}>
+                      {project.website && (
+                        <Button
+                          asChild
+                          variant="default"
+                          className="flex-1 bg-gradient-to-r from-primary to-accent hover:opacity-90"
+                        >
+                          <a href={project.website} target="_blank" rel="noopener noreferrer">
+                            Website <Globe className="ml-2 h-4 w-4" />
+                          </a>
+                        </Button>
+                      )}
+                      <Button
+                        asChild
+                        variant="outline"
+                        className={`${project.website ? 'flex-1' : 'w-full'} border-primary hover:bg-primary/10 group-hover:border-accent`}
+                      >
+                        <a href={project.link} target="_blank" rel="noopener noreferrer">
+                          GitHub <ExternalLink className="ml-2 h-4 w-4" />
+                        </a>
+                      </Button>
+                    </div>
                   </div>
                 </Card>
               </motion.div>
