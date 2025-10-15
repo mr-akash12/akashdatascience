@@ -34,10 +34,10 @@ const skillCategories = [
     color: 'text-accent',
     bgColor: 'bg-accent/10',
     skills: [
-      { name: 'Supervised Learning', level: 80 },
-      { name: 'Unsupervised Learning', level: 75 },
-      { name: 'Model Evaluation', level: 70 },
-      { name: 'Feature Engineering', level: 65 },
+      { name: 'Supervised Learning', level: 95 },
+      { name: 'Unsupervised Learning', level: 95 },
+      { name: 'Model Evaluation', level: 95 },
+      { name: 'Feature Engineering', level: 95 },
     ]
   },
 ];
