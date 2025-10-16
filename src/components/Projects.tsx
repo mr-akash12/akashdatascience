@@ -4,6 +4,7 @@ import { ExternalLink, ChevronDown, ChevronUp, Globe } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import emailSpamImage from '@/assets/email-spam.jpg';
 
 const projects = [
   {
@@ -51,6 +52,16 @@ const projects = [
     category: 'Python',
     tags: ['Pandas', 'Matplotlib / Seaborn', 'Power BI'],
     color: 'border-primary'
+  },
+  {
+    title: '📧 Email Spam Detection using NLP',
+    description: 'A Natural Language Processing project that classifies emails as spam or legitimate using machine learning techniques—helping filter out unwanted messages and enhance email security.',
+    image: emailSpamImage,
+    link: 'https://github.com/mr-akash12/email-spam-classifier-nlp.git',
+    website: 'https://email-spam-classifier-nlp-op8tjqyeeu5o6cz8a6k2yu.streamlit.app/',
+    category: 'Python',
+    tags: ['NLP', 'Scikit-learn', 'Streamlit'],
+    color: 'border-accent'
   },
   {
     title: 'Movie Recommendation System',
