@@ -103,7 +103,7 @@ export default function Hero() {
               <img
                 src={akashImage}
                 alt="Akash - Data Scientist"
-                className="absolute inset-8 w-48 h-48 sm:w-64 sm:h-64 lg:w-72 lg:h-72 rounded-full object-cover border-4 border-primary shadow-lg shadow-primary/50"
+                className="absolute top-12 bottom-4 left-8 right-8 w-48 h-48 sm:w-64 sm:h-64 lg:w-72 lg:h-72 rounded-full object-cover border-4 border-primary shadow-lg shadow-primary/50"
               />
             </div>
           </motion.div>
