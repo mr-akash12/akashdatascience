@@ -29,9 +29,9 @@ export default function Hero() {
               transition={{ delay: 0.2 }}
               className="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6"
             >
-              <span className="block text-foreground">Hi, I'm Akash</span>
+              <span className="block text-foreground">Hi, I'm Akash Kumar Nayak</span>
               <span className="block bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                👨‍💻 Junior Data Scientist
+                📊 Data Analyst
               </span>
             </motion.h1>
             
@@ -41,9 +41,10 @@ export default function Hero() {
               transition={{ delay: 0.4 }}
               className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl"
             >
-              Hi, I'm Akash — a data science enthusiast with a passion for uncovering patterns, 
-              solving problems, and building models that matter. From regression pipelines to 
-              dashboard storytelling, I bring curiosity and clarity to every dataset.
+              Data Analyst skilled in SQL, Python, Excel, Power BI, and Machine Learning. 
+              Experienced in data cleaning, feature engineering, exploratory data analysis (EDA), 
+              and time series forecasting. Proficient in building interactive dashboards and data 
+              visualizations to generate actionable insights and support data-driven business decisions.
             </motion.p>
             
             <motion.div

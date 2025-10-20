@@ -5,20 +5,20 @@ import { Card } from '@/components/ui/card';
 const stats = [
   {
     icon: Award,
-    value: 'Fresher',
-    label: 'Experience',
+    value: 'B.Tech CS',
+    label: 'Gandhi Engineering College',
     color: 'text-primary',
   },
   {
     icon: CheckCircle,
-    value: '15+',
-    label: 'Completed Projects',
+    value: '2',
+    label: 'Major Certifications',
     color: 'text-primary',
   },
   {
     icon: Users,
-    value: '500+',
-    label: 'Connections',
+    value: '1',
+    label: 'Data Analyst Internship',
     color: 'text-primary',
   },
 ];

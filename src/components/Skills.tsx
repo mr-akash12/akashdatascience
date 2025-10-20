@@ -6,26 +6,23 @@ import { Progress } from '@/components/ui/progress';
 const skillCategories = [
   {
     icon: Code,
-    title: 'Programming & Analysis',
+    title: 'Programming & Querying',
     color: 'text-primary',
     bgColor: 'bg-primary/10',
     skills: [
-      { name: 'Python', level: 90 },
       { name: 'SQL', level: 95 },
-      { name: 'R', level: 85 },
-      { name: 'Excel/VBA', level: 80 },
+      { name: 'Python', level: 90 },
     ]
   },
   {
     icon: PieChart,
-    title: 'Data Visualization',
+    title: 'Data Visualization Tools',
     color: 'text-secondary',
     bgColor: 'bg-secondary/10',
     skills: [
-      { name: 'Tableau', level: 95 },
-      { name: 'Power BI', level: 85 },
-      { name: 'Matplotlib/Seaborn', level: 90 },
-      { name: 'D3.js', level: 70 },
+      { name: 'Advanced MS Excel', level: 90 },
+      { name: 'Power BI', level: 90 },
+      { name: 'Tableau', level: 85 },
     ]
   },
   {
@@ -37,16 +34,16 @@ const skillCategories = [
       { name: 'Supervised Learning', level: 95 },
       { name: 'Unsupervised Learning', level: 95 },
       { name: 'Model Evaluation', level: 95 },
-      { name: 'Feature Engineering', level: 95 },
+      { name: 'Regression & Classification', level: 90 },
     ]
   },
 ];
 
 const additionalSkills = [
-  { icon: Cpu, title: 'Deep Learning', description: 'Neural Networks, CNNs', color: 'text-primary' },
-  { icon: Code, title: 'Machine Learning', description: 'Scikit-learn, TensorFlow, PyTorch', color: 'text-secondary' },
-  { icon: Cloud, title: 'Database Systems', description: 'PostgreSQL, MySQL, MongoDB', color: 'text-chart-4' },
-  { icon: PieChart, title: 'ETL Tools', description: 'Apache Airflow, Dataflow, Informatica', color: 'text-accent' },
+  { icon: Cpu, title: 'Data Cleaning', description: 'Data preprocessing & wrangling', color: 'text-primary' },
+  { icon: Code, title: 'EDA & Feature Engineering', description: 'Exploratory analysis & feature creation', color: 'text-secondary' },
+  { icon: Cloud, title: 'Insight Generation', description: 'Descriptive statistics & analysis', color: 'text-chart-4' },
+  { icon: PieChart, title: 'Time Series Forecasting', description: 'Predictive analytics & forecasting', color: 'text-accent' },
 ];
 
 export default function Skills() {

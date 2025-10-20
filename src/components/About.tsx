@@ -49,7 +49,7 @@ export default function About() {
             About Me
           </h2>
           <p className="text-4xl md:text-5xl font-extrabold text-foreground">
-            Passion for Data Analytics and 👨‍💻 Data Science
+            Passion for Data Analytics & Insight Generation
           </p>
         </motion.div>
 
@@ -63,15 +63,17 @@ export default function About() {
             <Card className="p-8 h-full bg-card/50 backdrop-blur border-border hover:border-primary transition-all duration-300">
               <h3 className="text-3xl font-bold text-foreground mb-6">My Journey</h3>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                I'm a junior data scientist with a strong foundation in Python, machine learning, 
-                and data visualization. I thrive on analytical challenges — whether it's fine-tuning 
-                models, interpreting metrics, or crafting dashboards that speak to stakeholders. 
-                My journey blends hands-on experimentation with a love for storytelling through data.
+                I'm a Data Analyst skilled in SQL, Python, Excel, Power BI, and Machine Learning. 
+                I specialize in data cleaning, feature engineering, exploratory data analysis (EDA), 
+                and time series forecasting. With hands-on experience at Cognifyz Technologies, 
+                I developed regression models on 200,000+ rows and delivered pricing strategy 
+                recommendations that improved fare prediction accuracy by 42%.
               </p>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Currently, I'm building projects that span regression, classification, clustering, 
-                and dashboarding — with a focus on real-world impact. I believe in learning by doing, 
-                visualizing by design, and communicating insights that drive action.
+                I hold a B.Tech in Computer Science from Gandhi Engineering College (CGPA: 7.6/10) 
+                and am certified by Google and IBM in Data Analytics and Machine Learning. 
+                I'm passionate about building interactive dashboards and generating actionable 
+                insights that support data-driven business decisions.
               </p>
               <Button
                 asChild

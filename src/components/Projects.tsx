@@ -8,22 +8,22 @@ import emailSpamImage from '@/assets/email-spam.jpg';
 
 const projects = [
   {
-    title: '🧑‍💼 Employee Attrition Analysis & Prediction',
-    description: 'A full-stack data science project that uncovers key drivers of employee turnover and predicts attrition risk using Python, Power BI, and Streamlit—empowering HR teams with actionable insights for better retention strategies.',
+    title: '🧑‍💼 Employee Attrition Analysis',
+    description: 'Analyzed 14,999 employee records to uncover attrition drivers. Created a Random Forest classifier achieving 97% accuracy after balancing the dataset. Designed 8 dynamic KPIs in Power BI and deployed an interactive dashboard via Streamlit for real-time attrition monitoring.',
     image: 'https://interimexecs.com/wp-content/uploads/2022/09/CEO_Turnover_social.png',
     link: 'https://github.com/mr-akash12/Employee-Attrition-Prediction-App.git',
     website: 'https://quantum-flight-path.lovable.app/',
-    category: 'Python',
-    tags: ['Pandas', 'Scikit-learn', 'Matplotlib / Seaborn / Power BI', 'Streamlit'],
+    category: 'Python | Power BI',
+    tags: ['Python', 'XGBoost', 'Power BI', 'Streamlit'],
     color: 'border-primary'
   },
   {
-    title: '🚕 Uber Fare Prediction',
-    description: 'The Uber Fare Prediction project uses machine learning to estimate ride prices based on trip details like distance, time, and location—helping optimize pricing and improve user experience. 🚕',
-    image: 'https://i.ytimg.com/vi/nimhvNKZlsI/maxresdefault.jpg',
-    link: 'https://github.com/mr-akash12/Uber-Fare-Prediction-Machine-Learning-Regression-Model',
-    category: 'Python',
-    tags: ['Pandas', 'Matplotlib / Seaborn', 'Scikit-learn'],
+    title: '🛍️ USA Regional Sales Analysis',
+    description: 'Processed 64K+ sales records across 5 regions by merging 6 Excel sheets. Cleaned and engineered 30+ columns. Created Power BI dashboard with 12+ KPIs and DAX measures. Insights improved budget alignment by 25% and reduced risk by 18%.',
+    image: 'https://leanexcelsolutions.com/wp-content/uploads/2022/11/Sales-Dashboard-in-Excel-Violet.png',
+    link: 'https://github.com/mr-akash12/Regional_-Sales_-Analysis-_IN_-USA.git',
+    category: 'Python | Power BI',
+    tags: ['Python', 'Pandas', 'Power BI', 'SQL'],
     color: 'border-secondary'
   },
   {
@@ -43,15 +43,6 @@ const projects = [
     category: 'Python',
     tags: ['Pandas', 'Matplotlib / Seaborn', 'Scikit-learn', 'Streamlit'],
     color: 'border-chart-4'
-  },
-  {
-    title: '🛒 Regional Sales Analysis – USA',
-    description: 'In this project, I analyzed regional sales data across the USA to uncover performance trends, identify high-growth areas, and provide actionable insights for strategic business planning.',
-    image: 'https://leanexcelsolutions.com/wp-content/uploads/2022/11/Sales-Dashboard-in-Excel-Violet.png',
-    link: 'https://github.com/mr-akash12/Regional_-Sales_-Analysis-_IN_-USA.git',
-    category: 'Python',
-    tags: ['Pandas', 'Matplotlib / Seaborn', 'Power BI'],
-    color: 'border-primary'
   },
   {
     title: '📧 Email Spam Detection using NLP',
