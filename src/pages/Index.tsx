@@ -6,6 +6,7 @@ import Stats from '@/components/Stats';
 import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import ChatAgent from '@/components/ChatAgent';
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
       <Projects />
       <Contact />
       <Footer />
+      <ChatAgent />
     </div>
   );
 };
