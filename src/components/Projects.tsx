@@ -5,6 +5,7 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import emailSpamImage from '@/assets/email-spam.jpg';
+import uberFareImage from '@/assets/uber-fare.png';
 
 const projects = [
   {
@@ -18,12 +19,12 @@ const projects = [
     color: 'border-primary'
   },
   {
-    title: '🛍️ USA Regional Sales Analysis',
-    description: 'Processed 64K+ sales records across 5 regions by merging 6 Excel sheets. Cleaned and engineered 30+ columns. Created Power BI dashboard with 12+ KPIs and DAX measures. Insights improved budget alignment by 25% and reduced risk by 18%.',
-    image: 'https://leanexcelsolutions.com/wp-content/uploads/2022/11/Sales-Dashboard-in-Excel-Violet.png',
-    link: 'https://github.com/mr-akash12/Regional_-Sales_-Analysis-_IN_-USA.git',
-    category: 'Python | Power BI',
-    tags: ['Python', 'Pandas', 'Power BI', 'SQL'],
+    title: '🚕 Uber Fare Prediction',
+    description: 'A machine learning regression model that predicts Uber fare prices based on various factors like distance, time, location, and weather conditions to provide accurate fare estimates.',
+    image: uberFareImage,
+    link: 'https://github.com/mr-akash12/Uber-Fare-Prediction-Machine-Learning-Regression-Model.git',
+    category: 'Python',
+    tags: ['Scikit-learn', 'Regression', 'Feature Engineering', 'ML'],
     color: 'border-secondary'
   },
   {
@@ -55,12 +56,12 @@ const projects = [
     color: 'border-accent'
   },
   {
-    title: '🚕 Uber Fare Prediction',
-    description: 'A machine learning regression model that predicts Uber fare prices based on various factors like distance, time, location, and weather conditions to provide accurate fare estimates.',
-    image: 'https://miro.medium.com/v2/resize:fit:1400/1*8nG5rH6B8l0TcHvN_4Zqwg.png',
-    link: 'https://github.com/mr-akash12/Uber-Fare-Prediction-Machine-Learning-Regression-Model.git',
-    category: 'Python',
-    tags: ['Scikit-learn', 'Regression', 'Feature Engineering', 'ML'],
+    title: '🛍️ USA Regional Sales Analysis',
+    description: 'Processed 64K+ sales records across 5 regions by merging 6 Excel sheets. Cleaned and engineered 30+ columns. Created Power BI dashboard with 12+ KPIs and DAX measures. Insights improved budget alignment by 25% and reduced risk by 18%.',
+    image: 'https://leanexcelsolutions.com/wp-content/uploads/2022/11/Sales-Dashboard-in-Excel-Violet.png',
+    link: 'https://github.com/mr-akash12/Regional_-Sales_-Analysis-_IN_-USA.git',
+    category: 'Python | Power BI',
+    tags: ['Python', 'Pandas', 'Power BI', 'SQL'],
     color: 'border-secondary'
   }
 ];
