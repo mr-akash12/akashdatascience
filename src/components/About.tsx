@@ -82,9 +82,10 @@ export default function About() {
                   className="bg-gradient-to-r from-primary to-accent hover:opacity-90"
                 >
                   <a
-                    href="https://drive.google.com/file/d/1Ps0NCjZBmsDZe3RQjIL8ysl9Qx615ZEW/view?usp=sharing"
+                    href="/AkashKumarNayak_Data_Analyst_CV.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
+                    download
                   >
                     Data Analyst Resume
                   </a>
@@ -96,9 +97,10 @@ export default function About() {
                   className="border-primary hover:bg-primary/10"
                 >
                   <a
-                    href="https://drive.google.com/file/d/1Ps0NCjZBmsDZe3RQjIL8ysl9Qx615ZEW/view?usp=sharing"
+                    href="/Akash_Kumar_Nayak_DataScientist_CV.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
+                    download
                   >
                     Data Scientist Resume
                   </a>
