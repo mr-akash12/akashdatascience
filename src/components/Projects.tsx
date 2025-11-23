@@ -55,12 +55,12 @@ const projects = [
     color: 'border-accent'
   },
   {
-    title: 'Movie Recommendation System',
-    description: 'A content-based movie recommendation system that suggests similar movies based on user preferences.',
-    image: 'https://miro.medium.com/v2/resize:fit:1400/1*gqhGG2pghvvPQ3aSVz2Qfw.png',
-    link: 'https://github.com/mr-akash12',
+    title: '🚕 Uber Fare Prediction',
+    description: 'A machine learning regression model that predicts Uber fare prices based on various factors like distance, time, location, and weather conditions to provide accurate fare estimates.',
+    image: 'https://miro.medium.com/v2/resize:fit:1400/1*8nG5rH6B8l0TcHvN_4Zqwg.png',
+    link: 'https://github.com/mr-akash12/Uber-Fare-Prediction-Machine-Learning-Regression-Model.git',
     category: 'Python',
-    tags: ['Pandas', 'Scikit-learn', 'NLP'],
+    tags: ['Scikit-learn', 'Regression', 'Feature Engineering', 'ML'],
     color: 'border-secondary'
   }
 ];
