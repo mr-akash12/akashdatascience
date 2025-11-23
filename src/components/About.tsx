@@ -75,19 +75,35 @@ export default function About() {
                 I'm passionate about building interactive dashboards and generating actionable 
                 insights that support data-driven business decisions.
               </p>
-              <Button
-                asChild
-                size="lg"
-                className="bg-gradient-to-r from-primary to-accent hover:opacity-90"
-              >
-                <a
-                  href="https://drive.google.com/file/d/1Ps0NCjZBmsDZe3RQjIL8ysl9Qx615ZEW/view?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-gradient-to-r from-primary to-accent hover:opacity-90"
                 >
-                  Download Resume
-                </a>
-              </Button>
+                  <a
+                    href="https://drive.google.com/file/d/1Ps0NCjZBmsDZe3RQjIL8ysl9Qx615ZEW/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Data Analyst Resume
+                  </a>
+                </Button>
+                <Button
+                  asChild
+                  size="lg"
+                  variant="outline"
+                  className="border-primary hover:bg-primary/10"
+                >
+                  <a
+                    href="https://drive.google.com/file/d/1Ps0NCjZBmsDZe3RQjIL8ysl9Qx615ZEW/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Data Scientist Resume
+                  </a>
+                </Button>
+              </div>
             </Card>
           </motion.div>
 
