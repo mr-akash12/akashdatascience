@@ -5,8 +5,8 @@ import { Card } from '@/components/ui/card';
 const stats = [
   {
     icon: Award,
-    value: 'B.Tech CS',
-    label: 'Gandhi Engineering College',
+    value: '10+',
+    label: 'Project Experience',
     color: 'text-primary',
   },
   {
@@ -17,8 +17,8 @@ const stats = [
   },
   {
     icon: Users,
-    value: '1',
-    label: 'Data Analyst Internship',
+    value: 'Data Analyst',
+    label: 'Experience',
     color: 'text-primary',
   },
 ];
