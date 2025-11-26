@@ -16,8 +16,9 @@ function DataBar({ position, height, color, label, value }: DataBarProps) {
   const meshRef = useRef<THREE.Mesh>(null);
   const [hovered, setHovered] = useState(false);
   const [currentHeight, setCurrentHeight] = useState(0);
+  const glowRef = useRef<THREE.PointLight>(null);
 
-  useFrame(() => {
+  useFrame((state) => {
     if (meshRef.current) {
       const targetHeight = height;
       setCurrentHeight((prev) => {
@@ -27,6 +28,15 @@ function DataBar({ position, height, color, label, value }: DataBarProps) {
       
       meshRef.current.scale.y = currentHeight;
       meshRef.current.position.y = currentHeight / 2;
+      
+      // Pulsing animation
+      const pulse = Math.sin(state.clock.getElapsedTime() * 2 + position[0]) * 0.02 + 1;
+      meshRef.current.scale.x = pulse;
+      meshRef.current.scale.z = pulse;
+    }
+    
+    if (glowRef.current) {
+      glowRef.current.intensity = hovered ? 2 : 0.5 + Math.sin(state.clock.getElapsedTime() * 2) * 0.3;
     }
   });
 
@@ -41,17 +51,19 @@ function DataBar({ position, height, color, label, value }: DataBarProps) {
         <meshStandardMaterial
           color={color}
           emissive={color}
-          emissiveIntensity={hovered ? 0.5 : 0.2}
-          metalness={0.8}
-          roughness={0.2}
+          emissiveIntensity={hovered ? 0.8 : 0.3}
+          metalness={0.9}
+          roughness={0.1}
         />
       </mesh>
       
+      <pointLight ref={glowRef} position={[0, currentHeight / 2, 0]} color={color} distance={5} />
+      
       {hovered && (
         <Html position={[0, currentHeight + 0.5, 0]}>
-          <div className="bg-background/90 backdrop-blur-sm border border-primary/20 rounded-lg px-3 py-2 shadow-xl">
+          <div className="bg-background/90 backdrop-blur-sm border border-primary/20 rounded-lg px-3 py-2 shadow-xl animate-fade-in">
             <p className="text-xs font-semibold text-primary">{label}</p>
-            <p className="text-lg font-bold text-foreground">{value.toLocaleString()}</p>
+            <p className="text-lg font-bold text-foreground">{value.toLocaleString()}%</p>
           </div>
         </Html>
       )}
@@ -72,38 +84,47 @@ function DataBar({ position, height, color, label, value }: DataBarProps) {
 function DataSphere({ position, color, size, label }: { position: [number, number, number]; color: string; size: number; label: string }) {
   const meshRef = useRef<THREE.Mesh>(null);
   const [hovered, setHovered] = useState(false);
+  const trailRef = useRef<THREE.Line>(null);
 
   useFrame((state) => {
     if (meshRef.current) {
-      meshRef.current.position.y += Math.sin(state.clock.getElapsedTime() + position[0]) * 0.001;
+      meshRef.current.position.y = position[1] + Math.sin(state.clock.getElapsedTime() * 2 + position[0]) * 0.5;
+      meshRef.current.rotation.y += 0.01;
+      meshRef.current.rotation.x += 0.005;
+      
+      const scale = 1 + Math.sin(state.clock.getElapsedTime() * 3) * 0.1;
+      meshRef.current.scale.setScalar(hovered ? scale * 1.3 : scale);
     }
   });
 
   return (
-    <mesh
-      ref={meshRef}
-      position={position}
-      onPointerOver={() => setHovered(true)}
-      onPointerOut={() => setHovered(false)}
-    >
-      <sphereGeometry args={[size, 32, 32]} />
-      <meshStandardMaterial
-        color={color}
-        emissive={color}
-        emissiveIntensity={hovered ? 0.8 : 0.3}
-        metalness={0.9}
-        roughness={0.1}
-        transparent
-        opacity={0.8}
-      />
+    <group>
+      <mesh
+        ref={meshRef}
+        position={position}
+        onPointerOver={() => setHovered(true)}
+        onPointerOut={() => setHovered(false)}
+      >
+        <sphereGeometry args={[size, 32, 32]} />
+        <meshStandardMaterial
+          color={color}
+          emissive={color}
+          emissiveIntensity={hovered ? 1 : 0.5}
+          metalness={1}
+          roughness={0}
+          transparent
+          opacity={0.9}
+        />
+      </mesh>
+      <pointLight position={position} color={color} intensity={hovered ? 2 : 1} distance={3} />
       {hovered && (
-        <Html>
-          <div className="bg-background/90 backdrop-blur-sm border border-primary/20 rounded-lg px-3 py-2 shadow-xl whitespace-nowrap">
+        <Html position={position}>
+          <div className="bg-background/90 backdrop-blur-sm border border-primary/20 rounded-lg px-3 py-2 shadow-xl whitespace-nowrap animate-scale-in">
             <p className="text-xs font-semibold text-foreground">{label}</p>
           </div>
         </Html>
       )}
-    </mesh>
+    </group>
   );
 }
 
