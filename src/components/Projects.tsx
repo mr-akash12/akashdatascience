@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ExternalLink, ChevronDown, ChevronUp, Globe } from 'lucide-react';
-import { Card } from '@/components/ui/card';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
+import ProjectCard3D from '@/components/ProjectCard3D';
 import emailSpamImage from '@/assets/email-spam.jpg';
 import uberFareImage from '@/assets/uber-fare.png';
 
@@ -91,63 +90,22 @@ export default function Projects() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 perspective-1000">
           <AnimatePresence>
             {displayedProjects.map((project, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 50, rotateX: -15 }}
+                whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ 
+                  duration: 0.6, 
+                  delay: index * 0.1,
+                  ease: [0.25, 0.46, 0.45, 0.94]
+                }}
               >
-                <Card className={`overflow-hidden bg-card/50 backdrop-blur border-2 ${project.color} hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 group h-full flex flex-col`}>
-                  <div className="relative h-48 overflow-hidden">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent opacity-60" />
-                  </div>
-                  <div className="p-6 flex-1 flex flex-col">
-                    <div className="flex items-start justify-between mb-2">
-                      <h3 className="text-lg font-medium text-foreground">{project.title}</h3>
-                      <Badge variant="secondary">{project.category}</Badge>
-                    </div>
-                    <p className="text-sm text-muted-foreground mb-4 flex-1">{project.description}</p>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {project.tags.map((tag, tagIndex) => (
-                        <Badge key={tagIndex} variant="outline" className="text-xs">
-                          {tag}
-                        </Badge>
-                      ))}
-                    </div>
-                    <div className={`flex gap-2 ${project.website ? '' : ''}`}>
-                      {project.website && (
-                        <Button
-                          asChild
-                          variant="default"
-                          className="flex-1 bg-gradient-to-r from-primary to-accent hover:opacity-90"
-                        >
-                          <a href={project.website} target="_blank" rel="noopener noreferrer">
-                            Website <Globe className="ml-2 h-4 w-4" />
-                          </a>
-                        </Button>
-                      )}
-                      <Button
-                        asChild
-                        variant="outline"
-                        className={`${project.website ? 'flex-1' : 'w-full'} border-primary hover:bg-primary/10 group-hover:border-accent`}
-                      >
-                        <a href={project.link} target="_blank" rel="noopener noreferrer">
-                          GitHub <ExternalLink className="ml-2 h-4 w-4" />
-                        </a>
-                      </Button>
-                    </div>
-                  </div>
-                </Card>
+                <ProjectCard3D {...project} />
               </motion.div>
             ))}
           </AnimatePresence>
