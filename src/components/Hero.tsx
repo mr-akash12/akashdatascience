@@ -31,7 +31,7 @@ export default function Hero() {
             >
               <span className="block text-foreground">Hi, I'm Akash Kumar Nayak</span>
               <span className="block bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                📊 Data Analyst
+                📊 Junior Data Scientist
               </span>
             </motion.h1>
             
@@ -41,7 +41,7 @@ export default function Hero() {
               transition={{ delay: 0.4 }}
               className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl"
             >
-              Data Analyst skilled in SQL, Python, Excel, Power BI, and Machine Learning. 
+              Junior Data Scientist skilled in SQL, Python, Excel, Power BI, and Machine Learning.
               Experienced in data cleaning, feature engineering, exploratory data analysis (EDA), 
               and time series forecasting. Proficient in building interactive dashboards and data 
               visualizations to generate actionable insights and support data-driven business decisions.
