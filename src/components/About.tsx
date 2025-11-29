@@ -63,7 +63,7 @@ export default function About() {
             <Card className="p-8 h-full bg-card/50 backdrop-blur border-border hover:border-primary transition-all duration-300">
               <h3 className="text-3xl font-bold text-foreground mb-6">My Journey</h3>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                I'm a Data Analyst skilled in SQL, Python, Excel, Power BI, and Machine Learning. 
+                I'm a Junior Data Scientist skilled in SQL, Python, Excel, Power BI, and Machine Learning.
                 I specialize in data cleaning, feature engineering, exploratory data analysis (EDA), 
                 and time series forecasting. With hands-on experience at Cognifyz Technologies, 
                 I developed regression models on 200,000+ rows and delivered pricing strategy 
@@ -87,7 +87,7 @@ export default function About() {
                     rel="noopener noreferrer"
                     download
                   >
-                    Data Analyst Resume
+                    Junior Data Scientist Resume
                   </a>
                 </Button>
                 <Button
