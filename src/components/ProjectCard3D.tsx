@@ -3,13 +3,14 @@ import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Globe } from 'lucide-react';
 
 interface ProjectCard3DProps {
   title: string;
   description: string;
   image: string;
   link: string;
+  website?: string;
   tags: string[];
   category: string;
   color: string;
@@ -20,6 +21,7 @@ export default function ProjectCard3D({
   description,
   image,
   link,
+  website,
   tags,
   category,
   color,
@@ -147,13 +149,14 @@ export default function ProjectCard3D({
           </div>
 
           <motion.div
+            className="flex gap-2"
             style={{
               transform: 'translateZ(70px)',
             }}
           >
             <Button
               asChild
-              className="w-full group/btn relative overflow-hidden"
+              className="flex-1 group/btn relative overflow-hidden"
               variant="default"
             >
               <a href={link} target="_blank" rel="noopener noreferrer">
@@ -175,6 +178,17 @@ export default function ProjectCard3D({
                 />
               </a>
             </Button>
+            {website && (
+              <Button
+                asChild
+                variant="outline"
+                className="group/web"
+              >
+                <a href={website} target="_blank" rel="noopener noreferrer">
+                  <Globe className="w-4 h-4 group-hover/web:text-primary transition-colors" />
+                </a>
+              </Button>
+            )}
           </motion.div>
         </CardContent>
       </Card>
