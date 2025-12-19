@@ -12,7 +12,7 @@ const projects = [
     description: 'Analyzed 14,999 employee records to uncover attrition drivers. Created a Random Forest classifier achieving 97% accuracy after balancing the dataset. Designed 8 dynamic KPIs in Power BI and deployed an interactive dashboard via Streamlit for real-time attrition monitoring.',
     image: 'https://interimexecs.com/wp-content/uploads/2022/09/CEO_Turnover_social.png',
     link: 'https://github.com/mr-akash12/Employee-Attrition-Prediction-App.git',
-    website: 'https://quantum-flight-path.lovable.app/',
+    website: 'https://lovable.dev/projects/514f8061-7362-4226-8ac3-14ea6e217b7b',
     category: 'Python | Power BI',
     tags: ['Python', 'XGBoost', 'Power BI', 'Streamlit'],
     color: 'border-primary'
