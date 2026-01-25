@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Code, PieChart, Cloud, Cpu, Brain } from 'lucide-react';
+import { Code, PieChart, Cloud, Cpu, Brain, MessageSquareText } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 
@@ -50,6 +50,18 @@ const skillCategories = [
       { name: 'Basic LLM', level: 70 },
     ]
   },
+  {
+    icon: MessageSquareText,
+    title: 'Natural Language Processing',
+    color: 'text-chart-5',
+    bgColor: 'bg-chart-5/10',
+    skills: [
+      { name: 'Text Preprocessing', level: 85 },
+      { name: 'Sentiment Analysis', level: 80 },
+      { name: 'Named Entity Recognition', level: 75 },
+      { name: 'Text Classification', level: 80 },
+    ]
+  },
 ];
 
 const additionalSkills = [
@@ -81,7 +93,7 @@ export default function Skills() {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid lg:grid-cols-3 gap-8 mb-12">
           {skillCategories.map((category, index) => {
             const Icon = category.icon;
             return (
