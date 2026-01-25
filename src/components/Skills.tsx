@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Code, PieChart, Cloud, Cpu } from 'lucide-react';
+import { Code, PieChart, Cloud, Cpu, Brain } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 
@@ -37,6 +37,19 @@ const skillCategories = [
       { name: 'Regression & Classification', level: 90 },
     ]
   },
+  {
+    icon: Brain,
+    title: 'Deep Learning',
+    color: 'text-chart-4',
+    bgColor: 'bg-chart-4/10',
+    skills: [
+      { name: 'ANN (Artificial Neural Networks)', level: 85 },
+      { name: 'RNN (Recurrent Neural Networks)', level: 80 },
+      { name: 'LSTM', level: 80 },
+      { name: 'Transformers', level: 75 },
+      { name: 'Basic LLM', level: 70 },
+    ]
+  },
 ];
 
 const additionalSkills = [
@@ -68,7 +81,7 @@ export default function Skills() {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid lg:grid-cols-4 gap-8 mb-12">
           {skillCategories.map((category, index) => {
             const Icon = category.icon;
             return (
