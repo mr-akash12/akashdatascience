@@ -11,7 +11,7 @@ const skillCategories = [
     bgColor: 'bg-primary/10',
     skills: [
       { name: 'SQL', level: 95 },
-      { name: 'Python', level: 90 },
+      { name: 'Python', level: 92 },
     ]
   },
   {
@@ -20,9 +20,9 @@ const skillCategories = [
     color: 'text-secondary',
     bgColor: 'bg-secondary/10',
     skills: [
-      { name: 'Advanced MS Excel', level: 90 },
-      { name: 'Power BI', level: 90 },
-      { name: 'Tableau', level: 85 },
+      { name: 'Advanced MS Excel', level: 93 },
+      { name: 'Power BI', level: 94 },
+      { name: 'Tableau', level: 90 },
     ]
   },
   {
@@ -32,9 +32,9 @@ const skillCategories = [
     bgColor: 'bg-accent/10',
     skills: [
       { name: 'Supervised Learning', level: 95 },
-      { name: 'Unsupervised Learning', level: 95 },
-      { name: 'Model Evaluation', level: 95 },
-      { name: 'Regression & Classification', level: 90 },
+      { name: 'Unsupervised Learning', level: 94 },
+      { name: 'Model Evaluation', level: 93 },
+      { name: 'Regression & Classification', level: 92 },
     ]
   },
   {
@@ -43,11 +43,11 @@ const skillCategories = [
     color: 'text-chart-4',
     bgColor: 'bg-chart-4/10',
     skills: [
-      { name: 'ANN (Artificial Neural Networks)', level: 85 },
-      { name: 'RNN (Recurrent Neural Networks)', level: 80 },
-      { name: 'LSTM', level: 80 },
-      { name: 'Transformers', level: 75 },
-      { name: 'Basic LLM', level: 70 },
+      { name: 'ANN (Artificial Neural Networks)', level: 93 },
+      { name: 'RNN (Recurrent Neural Networks)', level: 91 },
+      { name: 'LSTM', level: 90 },
+      { name: 'Transformers', level: 90 },
+      { name: 'Basic LLM', level: 90 },
     ]
   },
   {
@@ -56,10 +56,10 @@ const skillCategories = [
     color: 'text-chart-5',
     bgColor: 'bg-chart-5/10',
     skills: [
-      { name: 'Text Preprocessing', level: 85 },
-      { name: 'Sentiment Analysis', level: 80 },
-      { name: 'Named Entity Recognition', level: 75 },
-      { name: 'Text Classification', level: 80 },
+      { name: 'Text Preprocessing', level: 94 },
+      { name: 'Sentiment Analysis', level: 92 },
+      { name: 'Named Entity Recognition', level: 90 },
+      { name: 'Text Classification', level: 91 },
     ]
   },
 ];
