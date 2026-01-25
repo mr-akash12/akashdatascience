@@ -82,12 +82,12 @@ export default function About() {
                   className="bg-gradient-to-r from-primary to-accent hover:opacity-90"
                 >
                   <a
-                    href="/AkashKumarNayak_Data_Analyst_CV.pdf"
+                    href="/Akash_Kumar_Nayak_Data_Analyst.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     download
                   >
-                    Junior Data Scientist Resume
+                    Data Analyst Resume
                   </a>
                 </Button>
                 <Button
@@ -97,7 +97,7 @@ export default function About() {
                   className="border-primary hover:bg-primary/10"
                 >
                   <a
-                    href="/Akash_Kumar_Nayak_DataScientist_CV.pdf"
+                    href="/Akash_Kumar_Nayak_Data_Scientist.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     download
