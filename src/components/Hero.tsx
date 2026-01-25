@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import Scene3D from './Scene3D';
 import akashImage from '@/assets/akash.png';
 
 export default function Hero() {
@@ -13,7 +12,8 @@ export default function Hero() {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <Scene3D />
+      {/* Background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-accent/10" />
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">

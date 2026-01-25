@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import ProjectCard3D from '@/components/ProjectCard3D';
+import ProjectCard from '@/components/ProjectCard';
 import emailSpamImage from '@/assets/email-spam.jpg';
 import uberFareImage from '@/assets/uber-fare.png';
 
@@ -90,22 +90,22 @@ export default function Projects() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 perspective-1000">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <AnimatePresence>
             {displayedProjects.map((project, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 50, rotateX: -15 }}
-                whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 viewport={{ once: true }}
                 transition={{ 
-                  duration: 0.6, 
+                  duration: 0.5, 
                   delay: index * 0.1,
-                  ease: [0.25, 0.46, 0.45, 0.94]
+                  ease: "easeOut"
                 }}
               >
-                <ProjectCard3D {...project} />
+                <ProjectCard {...project} />
               </motion.div>
             ))}
           </AnimatePresence>
