@@ -93,8 +93,7 @@ export default function About() {
                 <Button
                   asChild
                   size="lg"
-                  variant="outline"
-                  className="border-primary hover:bg-primary/10"
+                  className="bg-gradient-to-r from-[hsl(152,60%,35%)] to-[hsl(152,60%,15%)] hover:from-[hsl(152,60%,40%)] hover:to-[hsl(152,60%,20%)] text-white"
                 >
                   <a
                     href="/Akash_Kumar_Nayak_Data_Scientist.pdf"
