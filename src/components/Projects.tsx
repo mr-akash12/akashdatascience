@@ -18,6 +18,16 @@ const projects = [
     color: 'border-primary'
   },
   {
+    title: '📈 Stock Market Forecasting using LSTM',
+    description: 'A deep learning project using Long Short-Term Memory (LSTM) neural networks to predict stock market trends. Analyzes historical price data to forecast future stock prices with time-series analysis.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&auto=format&fit=crop&q=60',
+    link: 'https://github.com/mr-akash12/stock-market-forecasting-lstm.git',
+    website: 'https://stockmaertprediction.vercel.app/',
+    category: 'Deep Learning',
+    tags: ['Python', 'LSTM', 'TensorFlow', 'Time Series'],
+    color: 'border-chart-1'
+  },
+  {
     title: '🚕 Uber Fare Prediction',
     description: 'A machine learning regression model that predicts Uber fare prices based on various factors like distance, time, location, and weather conditions to provide accurate fare estimates.',
     image: uberFareImage,
